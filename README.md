@@ -6,6 +6,8 @@ HTML Tutorial: https://www.w3schools.com/html/
 
 
 Install http-server
+
 $ sudo npm install -g http-server 
 - OR -
+
 $  npm install -g http-server 
