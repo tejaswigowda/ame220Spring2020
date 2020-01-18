@@ -11,6 +11,6 @@ https://www.w3schools.com/html/
 
         1. Download [Node.js](https://nodejs.org/en/)
 
-        2. $ `sudo npm install -g http-server` (Mac/Linux)
+        2. $ sudo npm install -g http-server #(Mac/Linux)
                         - OR -
-           $ `npm install -g http-server` (Windows) 
+           $ npm install -g http-server #(Windows) 
