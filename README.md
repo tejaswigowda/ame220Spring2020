@@ -1,13 +1,13 @@
 # ame220Spring2020
 
-<b> GIT Tutorial: </b>
+- <b> GIT Tutorial: </b>
 https://book.programmingthecloud.com/ptc/skills/git.html
 
-<b> HTML Tutorial: </b>
+- <b> HTML Tutorial: </b>
 https://www.w3schools.com/html/
 
 
-<b>Install `http-server`</b>
+- <b>Install `http-server`</b>
 
 1. Download nodejs: https://nodejs.org/en/
 
