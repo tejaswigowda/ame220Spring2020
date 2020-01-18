@@ -8,10 +8,8 @@ https://www.w3schools.com/html/
 
 
 - <b>Install `http-server`</b>
-
         1. Download nodejs: https://nodejs.org/en/
 
         2. $ sudo npm install -g http-server 
-        - OR -
-
+                        - OR -
            $  npm install -g http-server 
