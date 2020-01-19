@@ -1,15 +1,16 @@
 # ame220Spring2020
 
-GIT Tutorial: https://book.programmingthecloud.com/ptc/skills/git.html
+- <b> GIT Tutorial: </b>
+https://book.programmingthecloud.com/ptc/skills/git.html
 
-HTML Tutorial: https://www.w3schools.com/html/
+- <b> HTML Tutorial: </b>
+https://www.w3schools.com/html/
 
 
-Install http-server
+- <b>Install `http-server`</b>
 
-Download nodejs: https://nodejs.org/en/
+        1. Download [Node.js](https://nodejs.org/en/)
 
-$ sudo npm install -g http-server 
-- OR -
-
-$  npm install -g http-server 
+        2. $ sudo npm install -g http-server #(Mac/Linux)
+                        - OR -
+           $ npm install -g http-server #(Windows) 
