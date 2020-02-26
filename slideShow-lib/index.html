@@ -7,6 +7,10 @@
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
 <style>
+body{
+  margin: 0;
+}
+
   img{
 display: block;
 height: 300px;    
@@ -14,9 +18,23 @@ height: 300px;
   .active{
     background: gold;
   }
+  #imgWrapper{
+    height: 90vh;
+    width: 100vw;
+  }
+  #imgWrapper div{
+    height: 90vh;
+    width: 100vw;
+    background-repeat:no-repeat;
+    position:absolute;
+    background-position: 50% 50%;
+    background-size: contain;
+    transition-duration: 1s;
+  }
   </style>
   <body>
-    <img>
+  <div id='imgWrapper'>
+  </div>
 
     <button onclick='goPrev()'> Prev </button>
 
@@ -34,10 +52,31 @@ height: 300px;
       }
       document.getElementById("numWrapper").innerHTML = markup;
 
+      var markup = "";
+      for(var i = 0; i < imgs.length; i++){
+        markup = markup + "<div style='background-image:url(" + imgs[i] + ")'></div>"
+      }
+      document.getElementById("imgWrapper").innerHTML = markup;
+
       var currSlide = 0;
 
       var goToSlide = function(n){
-        $("img").attr("src", imgs[n])
+      //  $("#imgWrapper div").css("opacity", 0);
+      //  $($("#imgWrapper div")[n]).css("opacity", 1);
+      
+      var arr = $("#imgWrapper div");
+      for(var i = 0; i < arr.length; i++){
+        if(i < n){
+          $(arr[i]).css("margin-left", "-100%");
+        }
+        else if(i == n){
+          $(arr[i]).css("margin-left", "0%");
+        }
+        else{
+          $(arr[i]).css("margin-left", "100%");
+        }
+      }
+
         currSlide = n;
         $("#numWrapper button").removeClass("active")
         $($("#numWrapper button")[currSlide]).addClass("active")
